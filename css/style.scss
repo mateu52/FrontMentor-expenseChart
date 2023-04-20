@@ -44,23 +44,29 @@ body {
     }
     .Daysweek {//ustalic min wysokość
         //position: absolute;
-        display: flex;
+        //display: flex;
         left:20;
         height: 200px;
         justify-content: space-between;
         padding:20px 0;
         .daysList {
             display: flex;
-            
-            
-            justify-content: space-around;
+            align-items: flex-end;
+            justify-content: space-between;
             .Day{
                 width: 30px;
                 color:gray;
                 background-color: aqua;
             }
         }
-        
+        .DaysNames {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            p{
+                width: 30px;
+            }
+        }
         .chart {
             display: flex;
             width: 20px;
