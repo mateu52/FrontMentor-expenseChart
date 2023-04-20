@@ -51,19 +51,29 @@ body {
 }
 
 .Spending .Daysweek {
-  position: absolute;
+  display: flex;
   left: 20;
   height: 200px;
-  display: flex;
   justify-content: space-between;
   padding: 20px 0;
 }
 
-.Spending .Daysweek .Day {
+.Spending .Daysweek .daysList {
   display: flex;
   justify-content: space-around;
+}
+
+.Spending .Daysweek .daysList .Day {
   width: 30px;
   color: gray;
+  background-color: aqua;
+}
+
+.Spending .Daysweek .chart {
+  display: flex;
+  width: 20px;
+  height: 60px;
+  background-color: #cfcfcf;
 }
 
 .Spending hr {

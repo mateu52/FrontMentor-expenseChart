@@ -43,17 +43,29 @@ body {
         font-weight: bolder;
     }
     .Daysweek {//ustalic min wysokość
-        position: absolute;
+        //position: absolute;
+        display: flex;
         left:20;
         height: 200px;
-        display: flex;
         justify-content: space-between;
         padding:20px 0;
-        .Day{
+        .daysList {
             display: flex;
+            
+            
             justify-content: space-around;
-            width: 30px;
-            color:gray;
+            .Day{
+                width: 30px;
+                color:gray;
+                background-color: aqua;
+            }
+        }
+        
+        .chart {
+            display: flex;
+            width: 20px;
+            height: 60px;
+            background-color: rgb(207, 207, 207);
         }
     }
     hr{
