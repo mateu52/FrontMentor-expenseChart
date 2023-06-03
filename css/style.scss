@@ -29,6 +29,7 @@ body {
     }
 }
 .Spending {
+    position: flex;
     max-width: 400px;
     min-height: 300px;
     margin-top: 20px;
@@ -42,9 +43,7 @@ body {
         font-family:Arial, Helvetica, sans-serif;
         font-weight: bolder;
     }
-    .Daysweek {//ustalic min wysokość
-        //position: absolute;
-        //display: flex;
+    .Daysweek {
         left:20;
         height: 200px;
         justify-content: space-between;
@@ -56,7 +55,14 @@ body {
             .Day{
                 width: 30px;
                 color:gray;
-                background-color: aqua;
+                background-color: rgb(123, 166, 250);
+                
+            }
+            .Day:hover{
+                background-color: rgb(73, 212, 212);
+                .textHover{
+                    visibility: visible;
+                }
             }
         }
         .DaysNames {
@@ -65,6 +71,7 @@ body {
             justify-content: space-between;
             p{
                 width: 30px;
+                text-align: center;
             }
         }
         .chart {
@@ -110,12 +117,13 @@ body {
         
     }
     .Procent {
-        position: absolute;
+        
+        position: flex;
         bottom: 0;
         margin-bottom: 80px;
     }
     .totalLast {
-        position: absolute;
+        position: flex;
         bottom: 0;
         margin-bottom: 60px;
     }

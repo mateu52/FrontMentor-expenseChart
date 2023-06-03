@@ -9,17 +9,13 @@ fetch('/data.json')
             let Dzien = document.createElement('p');
             Dzien.classList.add('Day');
             //Dzien.innerHTML = post.day;
-            
             Dzien.style.height = (post.amount+ "px");
+            let textTool = document.createElement('span')
+            textTool.classList.add('textHover')
+            textTool.innerHTML = (post.amount)
+            //DaysList.appendChild(textTool)
+            //Dzien.classList.add('tooltext')
             DaysList.appendChild(Dzien);
-            
-            // let Chart  = document.createElement('p');
-            // Chart.classList.add('chart');
-            // Chart.innerHTML = "HAHHAH"
-            // // DaysList.style.height = (post.amount+ "px");
-            // ChartElements.appendChild(Chart);
-
-            //document.getElementsByClassName('.DaysList').appendChild(DaysList);
 
         })
     })

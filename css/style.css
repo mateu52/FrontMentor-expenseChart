@@ -34,6 +34,7 @@ body {
 }
 
 .Spending {
+  position: flex;
   max-width: 400px;
   min-height: 300px;
   margin-top: 20px;
@@ -66,7 +67,15 @@ body {
 .Spending .Daysweek .daysList .Day {
   width: 30px;
   color: gray;
-  background-color: aqua;
+  background-color: #7ba6fa;
+}
+
+.Spending .Daysweek .daysList .Day:hover {
+  background-color: #49d4d4;
+}
+
+.Spending .Daysweek .daysList .Day:hover .textHover {
+  visibility: visible;
 }
 
 .Spending .Daysweek .DaysNames {
@@ -77,6 +86,7 @@ body {
 
 .Spending .Daysweek .DaysNames p {
   width: 30px;
+  text-align: center;
 }
 
 .Spending .Daysweek .chart {
@@ -127,13 +137,13 @@ body {
 }
 
 .Spending .Procent {
-  position: absolute;
+  position: flex;
   bottom: 0;
   margin-bottom: 80px;
 }
 
 .Spending .totalLast {
-  position: absolute;
+  position: flex;
   bottom: 0;
   margin-bottom: 60px;
 }
